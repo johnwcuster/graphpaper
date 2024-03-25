@@ -5,6 +5,8 @@
   --rule: 4px;
   --w-thin: 0;
   --w-neat: 0;
+  --adj_cell: calc(3.125vw - 4px);
+  --adj_bit: calc(1.5625vw - 4px);
 }
 
 body {
@@ -937,6 +939,7 @@ body {
   [class*="rule"][class*="grid_02"].set_05.flow_05 > :nth-child(-n+2),
   [class*="rule"][class*="grid_02"].set_05.flow_06 > :nth-child(n+4) {
     border-left: var(--rule) solid;
+    padding-left: var(--adj_bit);
   }
   
   [class*="grid_02a"]:not([class*="set"]).flow_01 > :first-child,
@@ -981,6 +984,7 @@ body {
   [class*="rule"][class*="grid_03d"][class*="flow"].set_06 > :first-child {
     border-right: var(--rule) solid;
     border-left: var(--rule) solid;
+    padding-left: var(--adj_bit);
   }
   [class*="rule"][class*="grid_03"]:not([class*="flow"]).set_03 > :nth-child(-n+2),
   [class*="rule"][class*="grid_03"]:not([class*="flow"]).set_05 > :nth-child(-n+3),
@@ -1016,6 +1020,7 @@ body {
   [class*="rule"].grid_03.set_06.flow_02 > :nth-child(n+5),
   [class*="rule"][class*="grid_03a"].set_06.flow_02 > :nth-child(n+5) {
     border-left: var(--rule) solid;
+    padding-left: var(--adj_bit);
   }
 
   [class*="rule"][class*="grid_03b"]:not([class*="flow"]).set_03 > :nth-child(-n+2),
@@ -1026,6 +1031,7 @@ body {
   [class*="rule"][class*="grid_03"]:not([class*="03a"]):not([class*="03b"]):not(.grid_03).set_04.flow_06 > :last-child {
     border-right: 0;
     border-left: var(--rule) solid;
+    padding-left: var(--adj_bit);
   }
 
   [class*="grid_03a"].set_04.flow_01 > :first-child,
