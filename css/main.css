@@ -7,7 +7,9 @@
   --w-neat: 0;
   --adj_cell: calc(3.125vw - 1px);
   --adj_bit: calc(1.5625vw - 1px);
+  --border-color: #d0d3d4;
 }
+
 
 body {
   font-family: ui-sans-serif, sans-serif, system-ui;
@@ -976,13 +978,13 @@ body {
   [class*="rule"][class*="grid_02b"].set_05.flow_03 > :nth-child(2n+3),
   [class*="rule"][class*="grid_02"].set_05.flow_04 > :nth-child(-n+2),
   [class*="rule"][class*="grid_02"].set_05.flow_07 > :nth-child(n+4) {
-    border-right: var(--rule) solid;
+    border-right: var(--rule) solid var(--border-color);;
   }
   [class*="rule"][class*="grid_02a"].flow_01 > :first-child, 
   [class*="rule"][class*="grid_02"][class*="set"][class*="flow"]:not([class*="set_05"]) > :last-child,
   [class*="rule"][class*="grid_02"].set_05.flow_05 > :nth-child(-n+2),
   [class*="rule"][class*="grid_02"].set_05.flow_06 > :nth-child(n+4) {
-    border-left: var(--rule) solid;
+    border-left: var(--rule) solid var(--border-color);;
     padding-left: var(--adj_bit);
   }
   
@@ -1026,8 +1028,8 @@ body {
   [class*="rule"][class*="grid_03b"].set_05.flow_04 > :nth-child(2),
   [class*="rule"][class*="grid_03c"][class*="flow"].set_06 > :first-child,
   [class*="rule"][class*="grid_03d"][class*="flow"].set_06 > :first-child {
-    border-right: var(--rule) solid;
-    border-left: var(--rule) solid;
+    border-right: var(--rule) solid var(--border-color);;
+    border-left: var(--rule) solid var(--border-color);;
     padding-left: var(--adj_bit);
   }
   [class*="rule"][class*="grid_03"]:not([class*="flow"]).set_03 > :nth-child(-n+2),
@@ -1050,7 +1052,7 @@ body {
   [class*="rule"][class*="grid_03"]:not([class*="03b"]).set_06.flow_02 > :first-child,
   [class*="rule"][class*="grid_03b"].set_06.flow_02 > :nth-child(n+5),
   [class*="rule"][class*="grid_03b"].set_06.flow_03 > :last-child {
-    border-right: var(--rule) solid;
+    border-right: var(--rule) solid var(--border-color);;
   }
   [class*="rule"][class*="grid_03"].set_04.flow_02:not([class*="03c"]):not([class*="03d"]) > :last-child,
   [class*="rule"][class*="grid_03b"].set_05.flow_01 > :nth-child(-n+3),
@@ -1065,7 +1067,7 @@ body {
   [class*="rule"][class*="grid_03a"].set_06.flow_02 > :nth-child(n+5),
   [class*="rule"].grid_03.set_06.flow_03 > :last-child,
   [class*="rule"][class*="grid_03a"].set_06.flow_03 > :last-child {
-    border-left: var(--rule) solid;
+    border-left: var(--rule) solid var(--border-color);;
     padding-left: var(--adj_bit);
   }
   [class*="rule"][class*="grid_03b"]:not([class*="flow"]).set_03 > :nth-child(-n+2),
@@ -1075,7 +1077,7 @@ body {
   [class*="rule"][class*="grid_03b"].set_04.flow_05 > :nth-child(-n+2),
   [class*="rule"][class*="grid_03"]:not([class*="03a"]):not([class*="03b"]):not(.grid_03).set_04.flow_06 > :last-child {
     border-right: 0;
-    border-left: var(--rule) solid;
+    border-left: var(--rule) solid var(--border-color);;
     padding-left: var(--adj_bit);
   }
   [class*="grid_03a"].set_04.flow_01 > :first-child,
@@ -1103,7 +1105,7 @@ body {
   [class*="rule"][class*="grid_04"].set_05 > :not(:last-child),
   [class*="rule"][class*="grid_04b"][class*="flow"].set_06 > :nth-child(2n+4),
   [class*="rule"][class*="grid_04d"].set_06.flow_02 > :last-child {
-    border-right: var(--rule) solid;
+    border-right: var(--rule) solid var(--border-color);;
   }
   [class*="grid_04b"].set_04 > :nth-child(2),
   [class*="grid_04a"].set_04.flow_01 > :first-child, 
