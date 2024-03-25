@@ -2,11 +2,11 @@
   --bit: 1.5625vw;
   --cell: 3.125vw;
   --line: 1.5rem;
-  --rule: 4px;
+  --rule: 1px;
   --w-thin: 0;
   --w-neat: 0;
-  --adj_cell: calc(3.125vw - 4px);
-  --adj_bit: calc(1.5625vw - 4px);
+  --adj_cell: calc(3.125vw - 1px);
+  --adj_bit: calc(1.5625vw - 1px);
 }
 
 body {
