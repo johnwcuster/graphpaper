@@ -192,9 +192,11 @@ body {
     padding-left: var(--bit);
     padding-right: var(--bit);
   }
+  .rowgap--cell,
   .row-gap--cell {
     grid-row-gap: var(--cell);
   }
+  .rowgap--line,
   .row-gap--line {
     grid-row-gap: var(--line);
   }
@@ -245,6 +247,9 @@ body {
   .grid_03c {
     grid-template-columns: repeat(3, 1fr);
   }
+  .grid_03a {
+    grid-template-columns: var(--w-10-24) var(--w-7-24) var(--w-7-24);
+  }
   .grid_03a--01 {
     grid-template-columns: var(--w-10-24) var(--w-8-24) var(--w-6-24);
   }
@@ -268,6 +273,9 @@ body {
   }
   .grid_03a--08 {
     grid-template-columns: var(--w-16-24) var(--w-4-24) var(--w-4-24);
+  }
+  .grid_03b {
+    grid-template-columns: var(--w-7-24) var(--w-7-24) var(--w-10-24);
   }
 
   .grid_03b--01 {
@@ -294,7 +302,10 @@ body {
   .grid_03b--08 {
     grid-template-columns: var(--w-4-24) var(--w-4-24) var(--w-16-24);
   }
-
+  .grid_03c, 
+  .grid_03d {
+    grid-template-columns: var(--w-7-24) var(--w-10-24) var(--w-7-24);
+  }
   .grid_03c--01 {
     grid-template-columns: var(--w-8-24) var(--w-10-24) var(--w-6-24);
   }
